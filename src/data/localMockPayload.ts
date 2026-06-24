@@ -124,7 +124,7 @@ export const PRODUCTS: Product[] = [
     category: "Crop Sprayers",
     capacity: "16 Liters",
     description: "High-density polyethylene 16L tank equipped with heavy-duty 12V rechargeable battery and dual-nozzle system.",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&q=80&w=400",
+    image: "https://images.unsplash.com/photo-1628359355624-855775b5c9c4?auto=format&fit=crop&q=80&w=400",
     specs: { "Tank Capacity": "16 Liters", "Battery": "12V 8Ah (Dry Battery)", "Pressure": "0.2 - 0.45 Mpa", "Lance": "Stainless Steel Extendable", "Weight": "5.8 kg" }
   },
   {
@@ -142,7 +142,7 @@ export const PRODUCTS: Product[] = [
     name: "Flat Drip Lateral Pipe (16mm)",
     category: "Drip System Components",
     description: "Premium UV-stabilized virgin plastic lateral pipe with pre-molded flat drippers spaced at customized intervals.",
-    image: "https://images.unsplash.com/photo-1463123081488-729f6db8045b?auto=format&fit=crop&q=80&w=400",
+    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80&w=400",
     specs: { "Diameter": "16 mm", "Wall Thickness": "0.2 mm / 0.4 mm", "Dripper Spacing": "30 cm / 40 cm", "Flow Rate": "2.0 L/Hr", "Roll Length": "1000 Meters" }
   },
   {
@@ -178,7 +178,7 @@ export const PRODUCTS: Product[] = [
     name: "Bronze Impeller Series",
     category: "Spare Parts & Consumables",
     description: "Dynamically balanced replacement bronze impellers for centrifugal monoblock pumps.",
-    image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&q=80&w=400",
+    image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=400",
     specs: { "Material": "Grade LTB-2 Bronze", "Fit Model": "MB-50 & MB-75", "Balancing": "ISO Class 6.3 Dynamic", "Diameter": "135 mm to 210 mm" }
   },
   {
@@ -205,7 +205,7 @@ export const PRODUCTS: Product[] = [
     category: "Wholesale & Export",
     moq: "Bulk (Fits 1 Acre Grid)",
     description: "Comprehensive B2B layout bundle containing filters, main headers, 16mm laterals, valves, and layout connectors.",
-    image: "https://images.unsplash.com/photo-1563514220747-a33533e14af9?auto=format&fit=crop&q=80&w=400",
+    image: "https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?auto=format&fit=crop&q=80&w=400",
     specs: { "Coverage Area": "1 Acre Grid", "Included Filter": "2\" Screen Filter", "Laterals Length": "3000 Meters", "Emitters Type": "Inline Pre-spaced 40cm", "MOQ Order": "10 Kits" }
   }
 ];
@@ -213,14 +213,14 @@ export const PRODUCTS: Product[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   { id: "g1", category: "Factory", title: "Automated CNC Lathe Floor", image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=500" },
   { id: "g2", category: "Factory", title: "Heavy Pump Casting Inspection", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=500" },
-  { id: "g3", category: "Factory", title: "Impeller Balancing Workstation", image: "https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&q=80&w=500" },
+  { id: "g3", category: "Factory", title: "Impeller Balancing Workstation", image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=500" },
   { id: "g4", category: "Products", title: "Borewell Pumps Ready for Quality Test", image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=500" },
-  { id: "g5", category: "Products", title: "Battery Sprayer Assembly Line", image: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&q=80&w=500" },
-  { id: "g6", category: "Products", title: "Drip Lateral Extruder Output", image: "https://images.unsplash.com/photo-1463123081488-729f6db8045b?auto=format&fit=crop&q=80&w=500" },
+  { id: "g5", category: "Products", title: "Battery Sprayer Assembly Line", image: "https://images.unsplash.com/photo-1628359355624-855775b5c9c4?auto=format&fit=crop&q=80&w=500" },
+  { id: "g6", category: "Products", title: "Drip Lateral Extruder Output", image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&q=80&w=500" },
   { id: "g7", category: "Team", title: "Kantibhai Mehta Addressing Quality Team", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500" },
   { id: "g8", category: "Team", title: "Factory Engineers at Daily Standup", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=500" },
   { id: "g9", category: "Team", title: "Testing Lab Technical Staff", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=500" },
-  { id: "g10", category: "Certifications & Events", title: "BIS License Renewal Team Photo", image: "https://images.unsplash.com/photo-1563514220747-a33533e14af9?auto=format&fit=crop&q=80&w=500" },
+  { id: "g10", category: "Certifications & Events", title: "BIS License Renewal Team Photo", image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=500" },
   { id: "g11", category: "Certifications & Events", title: "Ahmedabad Agri Expo Stall 2025", image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=500" },
   { id: "g12", category: "Certifications & Events", title: "ISO Auditing Certificate Handover", image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=500" },
   { id: "g13", category: "Factory", title: "Raw Material Storage Warehouse", image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=500" },

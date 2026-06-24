@@ -32,7 +32,8 @@ export default function ThreeDProductViewer() {
 
     // Camera
     const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
-    camera.position.set(0, 2, 7.5);
+    camera.position.set(0, 0.2, 7.5);
+    camera.lookAt(0, 0, 0);
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({

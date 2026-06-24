@@ -116,6 +116,9 @@ export default function ProductCatalog() {
                     alt={product.name}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=400";
+                    }}
                   />
                   <span className="absolute top-4 left-4 rounded-full bg-primary/90 px-3 py-1 font-body text-[10px] font-bold tracking-wider text-white uppercase">
                     {product.category}

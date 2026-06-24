@@ -85,6 +85,9 @@ export default function MediaGallery() {
               alt={item.title}
               className="w-full h-auto object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=500";
+              }}
             />
             {/* Hover Overlay */}
             <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-primary/90 via-primary/30 to-transparent p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -136,6 +139,9 @@ export default function MediaGallery() {
                 src={filteredItems[currentIndex].image}
                 alt={filteredItems[currentIndex].title}
                 className="max-h-[70vh] w-auto max-w-full rounded-lg object-contain shadow-2xl"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=500";
+                }}
               />
               {/* Title & Counter */}
               <div className="mt-4 text-center text-white">
