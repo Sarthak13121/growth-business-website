@@ -31,7 +31,8 @@ export default function ThreeDProductViewer() {
     const scene = new THREE.Scene();
 
     // Camera
-    const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
+    const isMobile = width < 640;
+    const camera = new THREE.PerspectiveCamera(isMobile ? 55 : 40, width / height, 0.1, 100);
     camera.position.set(0, 0.2, 7.5);
     camera.lookAt(0, 0, 0);
 
@@ -321,6 +322,7 @@ export default function ThreeDProductViewer() {
       const w = parent.clientWidth;
       const h = parent.clientHeight;
       camera.aspect = w / h;
+      camera.fov = w < 640 ? 55 : 40;
       camera.updateProjectionMatrix();
       renderer.setSize(w, h);
     };
@@ -352,12 +354,12 @@ export default function ThreeDProductViewer() {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:1.5rem_1.5rem] pointer-events-none" />
           
           {/* Instructions overlay */}
-          <span className="absolute top-4 left-4 z-20 font-body text-[10px] font-bold text-accent uppercase tracking-widest bg-white/5 border border-white/10 px-3 py-1.5 rounded-full backdrop-blur-md">
+          <span className="absolute top-3 left-3 sm:top-4 sm:left-4 z-20 font-body text-[9px] sm:text-[10px] font-bold text-accent uppercase tracking-widest bg-white/5 border border-white/10 px-2.5 sm:px-3 py-1.5 rounded-full backdrop-blur-md">
             🖱️ Drag to Rotate | Click Components
           </span>
 
           {/* RPM speed meter */}
-          <span className="absolute top-4 right-4 z-20 font-body text-[10px] font-bold text-green-400 uppercase tracking-wider bg-white/5 border border-white/10 px-3 py-1.5 rounded-full backdrop-blur-md flex items-center gap-1">
+          <span className="absolute bottom-3 right-3 sm:top-4 sm:right-4 sm:bottom-auto z-20 font-body text-[9px] sm:text-[10px] font-bold text-green-400 uppercase tracking-wider bg-white/5 border border-white/10 px-2.5 sm:px-3 py-1.5 rounded-full backdrop-blur-md flex items-center gap-1">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
             Rotor Speed: {currentRpm} RPM
           </span>

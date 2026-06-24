@@ -165,7 +165,7 @@ export default function ProductCatalog() {
                   </div>
 
                   {/* Buttons Strip */}
-                  <div className="mt-6 grid grid-cols-2 gap-3">
+                  <div className="mt-6 grid grid-cols-1 min-[380px]:grid-cols-2 gap-3">
                     <a
                       href={getWhatsAppLink(product.name)}
                       target="_blank"

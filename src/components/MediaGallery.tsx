@@ -126,10 +126,10 @@ export default function MediaGallery() {
             {/* Left Arrow */}
             <button
               onClick={prevPhoto}
-              className="absolute left-6 top-1/2 -translate-y-1/2 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 focus:outline-none z-20"
+              className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 focus:outline-none z-20"
               aria-label="Previous Photo"
             >
-              <ChevronLeft className="h-6 w-6" />
+              <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
             </button>
 
             {/* Center Image Container */}
@@ -160,10 +160,10 @@ export default function MediaGallery() {
             {/* Right Arrow */}
             <button
               onClick={nextPhoto}
-              className="absolute right-6 top-1/2 -translate-y-1/2 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 focus:outline-none z-20"
+              className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 focus:outline-none z-20"
               aria-label="Next Photo"
             >
-              <ChevronRight className="h-6 w-6" />
+              <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
             </button>
           </motion.div>
         )}
